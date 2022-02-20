@@ -938,7 +938,7 @@ void vehicle::smash( map &m, float hp_percent_loss_min, float hp_percent_loss_ma
     }
 
     std::unique_ptr<RemovePartHandler> handler_ptr;
-    // clear out any duplicated locations
+    // Clear out any duplicated locations.
     for( int p = static_cast<int>( parts.size() ) - 1; p >= 0; p-- ) {
         vehicle_part &part = parts[ p ];
         if( part.removed ) {
@@ -967,6 +967,9 @@ void vehicle::smash( map &m, float hp_percent_loss_min, float hp_percent_loss_ma
                     }
                 }
                 remove_part( other_p, *handler_ptr );
+                // This essentially restarts this loop because we've potentially invalidated parts_here.
+                p++;
+                break;
             }
         }
     }

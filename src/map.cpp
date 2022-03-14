@@ -391,6 +391,23 @@ void map::on_vehicle_moved( const int smz )
     set_pathfinding_cache_dirty( smz );
 }
 
+void map::cleanup_vehicles( VehicleList &vehicle_list )
+{
+    // Process item removal on the vehicles that were modified this turn.
+    // Use a copy because part_removal_cleanup can modify the container.
+    auto temp = dirty_vehicle_list;
+    for( const auto &elem : temp ) {
+        auto same_ptr = [ elem ]( const struct wrapped_vehicle & tgt ) {
+            return elem == tgt.v;
+        };
+        if( std::find_if( vehicle_list.begin(), vehicle_list.end(), same_ptr ) !=
+            vehicle_list.end() ) {
+            elem->part_removal_cleanup();
+        }
+    }
+    dirty_vehicle_list.clear();
+}
+
 void map::vehmove()
 {
     // give vehicles movement points
@@ -425,19 +442,10 @@ void map::vehmove()
             break;
         }
     }
-    // Process item removal on the vehicles that were modified this turn.
-    // Use a copy because part_removal_cleanup can modify the container.
-    auto temp = dirty_vehicle_list;
-    for( const auto &elem : temp ) {
-        auto same_ptr = [ elem ]( const struct wrapped_vehicle & tgt ) {
-            return elem == tgt.v;
-        };
-        if( std::find_if( vehicle_list.begin(), vehicle_list.end(), same_ptr ) !=
-            vehicle_list.end() ) {
-            elem->part_removal_cleanup();
-        }
-    }
-    dirty_vehicle_list.clear();
+
+    // Cleanup destroyed parts after movement.
+    cleanup_vehicles( vehicle_list );
+
     // The bool tracks whether the vehicles is on the map or not.
     std::map<vehicle *, bool> connected_vehicles;
     for( int zlev = minz; zlev <= maxz; ++zlev ) {

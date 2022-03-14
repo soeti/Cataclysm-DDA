@@ -729,6 +729,7 @@ class map
         // Removes vehicle from map and returns it in unique_ptr
         std::unique_ptr<vehicle> detach_vehicle( vehicle *veh );
         void destroy_vehicle( vehicle *veh );
+        void cleanup_vehicles( VehicleList &vehicle_list );
         // Vehicle movement
         void vehmove();
         // Selects a vehicle to move, returns false if no moving vehicles

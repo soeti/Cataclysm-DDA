@@ -9950,7 +9950,8 @@ point game::place_player( const tripoint &dest_loc )
     }
 
     // If the new tile is a boardable part, board it
-    if( vp1.part_with_feature( "BOARDABLE", true ) && !u.is_mounted() ) {
+    const optional_vpart_position vp2 = m.veh_at( dest_loc );
+    if( vp2.part_with_feature( "BOARDABLE", true ) && !u.is_mounted() ) {
         m.board_vehicle( u.pos(), &u );
     }
 

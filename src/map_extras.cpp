@@ -413,11 +413,15 @@ static bool mx_helicopter( map &m, const tripoint &abs_sub )
                     y <= c.y + dice( 1, 6 ) ) {
                     if( !one_in( 5 ) ) {
                         m.make_rubble( tripoint( x,  y, abs_sub.z ), f_wreckage, true );
+                        VehicleList vehicle_list = m.get_vehicles();
+                        m.cleanup_vehicles( vehicle_list );
                         if( m.ter( tripoint( x, y, abs_sub.z ) )->has_flag( ter_furn_flag::TFLAG_DIGGABLE ) ) {
                             m.ter_set( tripoint( x, y, abs_sub.z ), t_dirtmound );
                         }
                     } else if( m.is_bashable( point( x, y ) ) ) {
                         m.destroy( tripoint( x,  y, abs_sub.z ), true );
+                        VehicleList vehicle_list = m.get_vehicles();
+                        m.cleanup_vehicles( vehicle_list );
                         if( m.ter( tripoint( x, y, abs_sub.z ) )->has_flag( ter_furn_flag::TFLAG_DIGGABLE ) ) {
                             m.ter_set( tripoint( x, y, abs_sub.z ), t_dirtmound );
                         }
@@ -425,6 +429,8 @@ static bool mx_helicopter( map &m, const tripoint &abs_sub )
 
                 } else if( one_in( 4 + ( std::abs( x - c.x ) + std::abs( y -
                                          c.y ) ) ) ) { // 1 in 10 chance of being wreckage anyway
+                    VehicleList vehicle_list = m.get_vehicles();
+                    m.cleanup_vehicles( vehicle_list );
                     m.make_rubble( tripoint( x,  y, abs_sub.z ), f_wreckage, true );
                     if( !one_in( 3 ) ) {
                         if( m.ter( tripoint( x, y, abs_sub.z ) )->has_flag( ter_furn_flag::TFLAG_DIGGABLE ) ) {

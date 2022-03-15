@@ -1843,6 +1843,9 @@ bool vehicle::remove_part( const int p, RemovePartHandler &handler )
         zones_dirty = true;
     }
     parts[p].removed = true;
+    if( parts[p].has_fake ) {
+        parts[parts[p].fake_part_at].removed = true;
+    }
     removed_part_count++;
 
     handler.removed( *this, p );
@@ -2233,6 +2236,7 @@ bool vehicle::split_vehicles( const std::vector<std::vector <int>> &new_vehs,
             new_vehicle->tracking_on = tracking_on;
             new_vehicle->camera_on = camera_on;
         }
+        new_vehicle->add_tag( "wreckage" );
 
         std::vector<Character *> passengers;
         for( size_t new_part = 0; new_part < split_parts.size(); new_part++ ) {
@@ -2788,7 +2792,7 @@ vehicle_part_with_feature_range<vpart_bitflags> vehicle::get_enabled_parts(
 std::vector<int> vehicle::all_parts_at_location( const std::string &location ) const
 {
     std::vector<int> parts_found;
-    auto all_parts = get_all_parts();
+    vehicle_part_range all_parts = get_all_parts();
     for( const vpart_reference &vpr : all_parts ) {
         if( vpr.info().location == location && !parts[vpr.part_index()].removed ) {
             parts_found.push_back( vpr.part_index() );
@@ -3311,7 +3315,7 @@ int vehicle::fuel_capacity( const itype_id &ftype ) const
     vehicle_part_range vpr = get_all_parts();
     return std::accumulate( vpr.begin(), vpr.end(), 0, [&ftype]( const int &lhs,
     const vpart_reference & rhs ) {
-	cata::value_ptr<islot_ammo> a_val = item::find_type( ftype )->ammo;
+        cata::value_ptr<islot_ammo> a_val = item::find_type( ftype )->ammo;
         return lhs + ( rhs.part().ammo_current() == ftype ?
                        rhs.part().ammo_capacity( !!a_val ? a_val->type : ammotype::NULL_ID() ) :
                        0 );
@@ -3325,9 +3329,8 @@ float vehicle::fuel_specific_energy( const itype_id &ftype ) const
     for( const vpart_reference &vpr : get_all_parts() ) {
         if( vpr.part().is_tank() && vpr.part().ammo_current() == ftype &&
             vpr.part().base.only_item().made_of( phase_id::LIQUID ) ) {
-            float mass = to_gram( vpr.part().base.only_item().weight() );
-            total_energy += vpr.part().base.only_item().specific_energy * mass;
-            total_mass += mass;
+            total_energy += vpr.part().base.only_item().get_item_thermal_energy();
+            total_mass += to_gram( vpr.part().base.only_item().weight() );
         }
     }
     return total_energy / total_mass;
@@ -5885,11 +5888,6 @@ void vehicle::refresh( const bool remove_fakes )
     std::set<int> smzs = precalc_mounts( 0, pivot_rotation[0], pivot_anchor[0] );
     // update the fakes, and then repopulate the cache
     update_active_fakes();
-    map &here = get_map();
-    here.add_vehicle_to_cache( this );
-    for( const int dirty_z : smzs ) {
-        here.on_vehicle_moved( dirty_z );
-    }
     check_environmental_effects = true;
     insides_dirty = true;
     zones_dirty = true;
@@ -6516,6 +6514,10 @@ int vehicle::damage( int p, int dmg, damage_type type, bool aimed )
     }
 
     p = get_non_fake_part( p );
+    // If we're trying to hit a fake part with no associated real part, just cancel out.
+    if( p == -1 ) {
+        return dmg;
+    }
     std::vector<int> pl = parts_at_relative( parts[p].mount, true );
     if( pl.empty() ) {
         // We ran out of non removed parts at this location already.
@@ -6599,7 +6601,6 @@ void vehicle::damage_all( int dmg1, int dmg2, damage_type type, const point &imp
         return;
     }
 
-    std::cout << "veh " << name << " has " << parts.size() << " parts.";
     for( const vpart_reference &vp : get_all_parts() ) {
         const size_t p = vp.part_index();
         int distance = 1 + square_dist( vp.mount(), impact );
@@ -7387,7 +7388,7 @@ int vehicle::get_non_fake_part( const int part_num )
             return part_num;
         }
     }
-    std::cout << "Returning -1 for get_non_fake_part.";
+    debugmsg( "Returning -1 for get_non_fake_part on part_num %d.", part_num );
     return -1;
 }
 

@@ -561,7 +561,7 @@ const inventory &Character::crafting_inventory( const tripoint &src_pos, int rad
     }
     crafting_cache.crafting_inventory->clear();
     if( radius >= 0 ) {
-        crafting_cache.crafting_inventory->form_from_map( inv_pos, radius, this, false, false );
+        crafting_cache.crafting_inventory->form_from_map( inv_pos, radius, this, false,  clear_path );
     }
 
     std::map<itype_id, int> tmp_liq_list;

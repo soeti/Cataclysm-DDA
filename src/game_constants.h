@@ -62,7 +62,7 @@ static constexpr int MM_REG_SIZE = 8;
  * Items on the map with at most this distance to the player are considered available for crafting,
  * see inventory::form_from_map
 */
-static constexpr int PICKUP_RANGE = 6;
+static constexpr int PICKUP_RANGE = 12;
 
 // Number of z-levels below 0 (not including 0).
 static constexpr int OVERMAP_DEPTH = 10;

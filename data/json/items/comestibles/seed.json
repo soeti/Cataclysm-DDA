@@ -44,7 +44,7 @@
     "price": 160,
     "charges": 2,
     "stack_size": 8,
-    "seed_data": { "plant_name": "hops", "fruit": "hops", "byproducts": [ "straw_pile" ], "grow": "120 days" }
+    "seed_data": { "plant_name": "hops", "fruit": "hops", "byproducts": [ "straw_pile" ], "grow": "10 days" }
   },
   {
     "id": "seed_blackberries",
@@ -52,7 +52,7 @@
     "type": "COMESTIBLE",
     "name": { "str_sp": "blackberry seeds" },
     "description": "Some blackberry seeds.",
-    "seed_data": { "plant_name": "blackberry", "fruit": "blackberries", "byproducts": [ "withered" ], "grow": "91 days" }
+    "seed_data": { "plant_name": "blackberry", "fruit": "blackberries", "byproducts": [ "withered" ], "grow": "14 days" }
   },
   {
     "id": "seed_blueberries",
@@ -60,7 +60,7 @@
     "type": "COMESTIBLE",
     "name": { "str_sp": "blueberry seeds" },
     "description": "Some blueberry seeds.",
-    "seed_data": { "plant_name": "blueberry", "fruit": "blueberries", "byproducts": [ "withered" ], "grow": "91 days" }
+    "seed_data": { "plant_name": "blueberry", "fruit": "blueberries", "byproducts": [ "withered" ], "grow": "14 days" }
   },
   {
     "id": "seed_cranberries",
@@ -68,7 +68,7 @@
     "type": "COMESTIBLE",
     "name": { "str_sp": "cranberry seeds" },
     "description": "Some cranberry seeds.",
-    "seed_data": { "plant_name": "cranberry", "fruit": "cranberries", "byproducts": [ "withered" ], "grow": "91 days" }
+    "seed_data": { "plant_name": "cranberry", "fruit": "cranberries", "byproducts": [ "withered" ], "grow": "14 days" }
   },
   {
     "id": "seed_huckleberries",
@@ -76,7 +76,7 @@
     "type": "COMESTIBLE",
     "name": { "str_sp": "huckleberry seeds" },
     "description": "Some huckleberry seeds.",
-    "seed_data": { "plant_name": "huckleberry", "fruit": "huckleberries", "byproducts": [ "withered" ], "grow": "91 days" }
+    "seed_data": { "plant_name": "huckleberry", "fruit": "huckleberries", "byproducts": [ "withered" ], "grow": "14 days" }
   },
   {
     "id": "seed_mulberries",
@@ -145,7 +145,7 @@
     "weight": "5 g",
     "charges": 2,
     "stack_size": 40,
-    "seed_data": { "plant_name": "barley", "fruit": "barley", "byproducts": [ "straw_pile" ], "grow": "70 days" }
+    "seed_data": { "plant_name": "barley", "fruit": "barley", "byproducts": [ "straw_pile" ], "grow": "10 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -157,7 +157,7 @@
     "volume": "1 ml",
     "weight": "5 g",
     "stack_size": 40,
-    "seed_data": { "plant_name": "sugar beet", "fruit": "sugar_beet", "grow": "90 days" }
+    "seed_data": { "plant_name": "sugar beet", "fruit": "sugar_beet", "grow": "5 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -166,7 +166,7 @@
     "price": 50,
     "name": { "str_sp": "lettuce seeds" },
     "description": "Some lettuce seeds.",
-    "seed_data": { "plant_name": "lettuce", "fruit": "lettuce", "byproducts": [ "withered" ], "grow": "85 days" }
+    "seed_data": { "plant_name": "lettuce", "fruit": "lettuce", "byproducts": [ "withered" ], "grow": "10 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -176,7 +176,7 @@
     "name": { "str_sp": "cabbage seeds" },
     "color": "light_gray",
     "description": "Some white cabbage seeds.",
-    "seed_data": { "plant_name": "cabbage", "fruit": "cabbage", "byproducts": [ "withered" ], "grow": "85 days" }
+    "seed_data": { "plant_name": "cabbage", "fruit": "cabbage", "byproducts": [ "withered" ], "grow": "10 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -185,7 +185,7 @@
     "price": 50,
     "name": { "str_sp": "tomato seeds" },
     "description": "Some tomato seeds.",
-    "seed_data": { "plant_name": "tomato", "fruit": "tomato", "byproducts": [ "withered" ], "grow": "65 days" }
+    "seed_data": { "plant_name": "tomato", "fruit": "tomato", "byproducts": [ "withered" ], "grow": "10 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -207,7 +207,7 @@
     "price": 50,
     "name": { "str_sp": "broccoli seeds" },
     "description": "Some broccoli seeds.",
-    "seed_data": { "plant_name": "broccoli", "fruit": "broccoli", "byproducts": [ "withered" ], "grow": "75 days" }
+    "seed_data": { "plant_name": "broccoli", "fruit": "broccoli", "byproducts": [ "withered" ], "grow": "10 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -216,7 +216,7 @@
     "price": 50,
     "name": { "str_sp": "zucchini seeds" },
     "description": "Some zucchini seeds.",
-    "seed_data": { "plant_name": "zucchini", "fruit": "zucchini", "byproducts": [ "withered" ], "grow": "47 days" }
+    "seed_data": { "plant_name": "zucchini", "fruit": "zucchini", "byproducts": [ "withered" ], "grow": "10 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -225,7 +225,7 @@
     "price": 50,
     "name": { "str_sp": "onion seeds" },
     "description": "Some onion seeds.",
-    "seed_data": { "plant_name": "onion", "fruit": "onion", "byproducts": [ "withered" ], "grow": "65 days" }
+    "seed_data": { "plant_name": "onion", "fruit": "onion", "byproducts": [ "withered" ], "grow": "10 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -234,7 +234,7 @@
     "price": 50,
     "name": { "str_sp": "garlic seeds" },
     "description": "Some garlic seeds.",
-    "seed_data": { "plant_name": "garlic", "fruit": "garlic", "byproducts": [ "withered" ], "grow": "65 days" }
+    "seed_data": { "plant_name": "garlic", "fruit": "garlic", "byproducts": [ "withered" ], "grow": "10 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -243,7 +243,7 @@
     "name": { "str_sp": "cattail seeds" },
     "color": "green",
     "description": "Some cattail seeds.",
-    "seed_data": { "plant_name": "cattail", "fruit": "cattail_stalk", "byproducts": [ "cattail_rhizome" ], "grow": "91 days" }
+    "seed_data": { "plant_name": "cattail", "fruit": "cattail_stalk", "byproducts": [ "cattail_rhizome" ], "grow": "14 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -252,7 +252,7 @@
     "name": { "str_sp": "dahlia seeds" },
     "color": "green",
     "description": "Some dahlia seeds.",
-    "seed_data": { "plant_name": "dahlia", "fruit": "dahlia_root", "byproducts": [ "withered" ], "grow": "91 days" }
+    "seed_data": { "plant_name": "dahlia", "fruit": "dahlia_root", "byproducts": [ "withered" ], "grow": "14 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -262,7 +262,7 @@
     "color": "green",
     "description": "Some salsify seeds.",
     "charges": 2,
-    "seed_data": { "plant_name": "salsify", "fruit": "salsify_raw", "grow": "91 days" }
+    "seed_data": { "plant_name": "salsify", "fruit": "salsify_raw", "grow": "14 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -272,7 +272,7 @@
     "color": "green",
     "description": "Some chicory seeds.",
     "charges": 2,
-    "seed_data": { "plant_name": "chicory", "fruit": "chicory_raw", "byproducts": [ "withered" ], "grow": "91 days" }
+    "seed_data": { "plant_name": "chicory", "fruit": "chicory_raw", "byproducts": [ "withered" ], "grow": "14 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -281,7 +281,7 @@
     "price": 50,
     "name": { "str_sp": "wild root seeds" },
     "description": "Some seeds from a white flower.",
-    "seed_data": { "plant_name": "wild root", "fruit": "carrot_wild", "byproducts": [ "withered" ], "grow": "65 days" }
+    "seed_data": { "plant_name": "wild root", "fruit": "carrot_wild", "byproducts": [ "withered" ], "grow": "14 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -319,7 +319,7 @@
     "material": [ "garlic" ],
     "volume": "150 ml",
     "fun": -3,
-    "seed_data": { "plant_name": "garlic", "fruit": "garlic", "byproducts": [ "withered" ], "grow": "65 days" }
+    "seed_data": { "plant_name": "garlic", "fruit": "garlic", "byproducts": [ "withered" ], "grow": "10 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -328,7 +328,7 @@
     "price": 50,
     "name": { "str_sp": "carrot seeds" },
     "description": "Some carrot seeds.",
-    "seed_data": { "plant_name": "carrot", "fruit": "carrot", "byproducts": [ "withered" ], "grow": "65 days" }
+    "seed_data": { "plant_name": "carrot", "fruit": "carrot", "byproducts": [ "withered" ], "grow": "10 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -337,7 +337,7 @@
     "price": 50,
     "name": { "str_sp": "corn seeds" },
     "description": "Some corn seeds.",
-    "seed_data": { "plant_name": "corn", "fruit": "corn", "byproducts": [ "withered" ], "grow": "80 days" }
+    "seed_data": { "plant_name": "corn", "fruit": "corn", "byproducts": [ "withered" ], "grow": "14 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -347,7 +347,7 @@
     "name": { "str_sp": "chili pepper seeds" },
     "color": "white",
     "description": "Some chili pepper seeds.",
-    "seed_data": { "plant_name": "chili pepper", "fruit": "chili_pepper", "byproducts": [ "withered" ], "grow": "65 days" }
+    "seed_data": { "plant_name": "chili pepper", "fruit": "chili_pepper", "byproducts": [ "withered" ], "grow": "14 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -367,7 +367,7 @@
     "description": "A raw potato, cut into pieces, separating each bud for planting.",
     "weight": "20 g",
     "stack_size": 10,
-    "seed_data": { "plant_name": "potatoes", "fruit": "potato", "byproducts": [ "withered" ], "grow": "95 days" }
+    "seed_data": { "plant_name": "potatoes", "fruit": "potato", "byproducts": [ "withered" ], "grow": "14 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -383,7 +383,7 @@
     "weight": "2 g",
     "charges": 2,
     "flags": [ "RAW" ],
-    "seed_data": { "plant_name": "cannabis", "fruit": "cannabis", "grow": "91 days" },
+    "seed_data": { "plant_name": "cannabis", "fruit": "cannabis", "grow": "14 days" },
     "milling": { "into": "paste_seed", "conversion_rate": 0.02 }
   },
   {
@@ -433,7 +433,7 @@
     "description": "Raw, uncooked beans, ready for planting.",
     "charges": 2,
     "price": 90,
-    "seed_data": { "plant_name": "beans", "fruit": "raw_beans", "byproducts": [ "withered" ], "grow": "91 days" }
+    "seed_data": { "plant_name": "beans", "fruit": "raw_beans", "byproducts": [ "withered" ], "grow": "10 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -445,7 +445,7 @@
     "color": "yellow",
     "description": "Some soybean seeds.",
     "price": 90,
-    "seed_data": { "plant_name": "soybean", "fruit": "soybean", "byproducts": [ "withered", "raw_edamame" ], "grow": "91 days" }
+    "seed_data": { "plant_name": "soybean", "fruit": "soybean", "byproducts": [ "withered", "raw_edamame" ], "grow": "10 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -457,7 +457,7 @@
     "description": "Raw, uncooked lentils, ready for planting.",
     "charges": 2,
     "price": 90,
-    "seed_data": { "plant_name": "lentils", "fruit": "raw_lentils", "byproducts": [ "withered" ], "grow": "91 days" }
+    "seed_data": { "plant_name": "lentils", "fruit": "raw_lentils", "byproducts": [ "withered" ], "grow": "14 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -468,7 +468,7 @@
     "color": "green",
     "description": "Some thyme seeds.",
     "charges": 2,
-    "seed_data": { "plant_name": "thyme", "fruit": "thyme", "grow": "91 days" }
+    "seed_data": { "plant_name": "thyme", "fruit": "thyme", "grow": "14 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -478,7 +478,7 @@
     "color": "green",
     "description": "Some canola seeds.  You could press them into oil.",
     "charges": 2,
-    "seed_data": { "plant_name": "canola", "fruit": "seed_canola", "byproducts": [ "withered" ], "grow": "91 days" },
+    "seed_data": { "plant_name": "canola", "fruit": "seed_canola", "byproducts": [ "withered" ], "grow": "14 days" },
     "milling": { "into": "paste_seed", "conversion_rate": 0.02 }
   },
   {
@@ -487,7 +487,7 @@
     "copy-from": "seed_fruit",
     "name": { "str_sp": "watermelon seeds" },
     "description": "Some watermelon seeds.",
-    "seed_data": { "plant_name": "watermelon", "fruit": "watermelon", "fruit_div": 3, "byproducts": [ "withered" ], "grow": "91 days" }
+    "seed_data": { "plant_name": "watermelon", "fruit": "watermelon", "fruit_div": 3, "byproducts": [ "withered" ], "grow": "14 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -501,7 +501,7 @@
     "description": "Some raw pumpkin seeds.  Could be fried and eaten.",
     "price": 100,
     "charges": 2,
-    "seed_data": { "plant_name": "pumpkin", "fruit": "pumpkin", "fruit_div": 3, "byproducts": [ "withered" ], "grow": "91 days" },
+    "seed_data": { "plant_name": "pumpkin", "fruit": "pumpkin", "fruit_div": 3, "byproducts": [ "withered" ], "grow": "14 days" },
     "milling": { "into": "paste_seed", "conversion_rate": 0.02 }
   },
   {
@@ -516,7 +516,7 @@
     "description": "Some raw sunflower seeds.  Could be pressed into oil.",
     "price": 100,
     "charges": 2,
-    "seed_data": { "plant_name": "sunflower", "fruit": "seed_sunflower", "byproducts": [ "withered" ], "grow": "91 days" },
+    "seed_data": { "plant_name": "sunflower", "fruit": "seed_sunflower", "byproducts": [ "withered" ], "grow": "14 days" },
     "milling": { "into": "paste_seed", "conversion_rate": 0.02 }
   },
   {
@@ -527,7 +527,7 @@
     "color": "green",
     "description": "Some dogbane seeds.",
     "charges": 2,
-    "seed_data": { "plant_name": "dogbane", "fruit": "dogbane", "byproducts": [ "withered" ], "grow": "91 days" }
+    "seed_data": { "plant_name": "dogbane", "fruit": "dogbane", "byproducts": [ "withered" ], "grow": "14 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -537,7 +537,7 @@
     "color": "green",
     "description": "Some bee balm seeds.",
     "charges": 2,
-    "seed_data": { "plant_name": "bee balm", "fruit": "bee_balm", "byproducts": [ "withered" ], "grow": "91 days" }
+    "seed_data": { "plant_name": "bee balm", "fruit": "bee_balm", "byproducts": [ "withered" ], "grow": "14 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -547,7 +547,7 @@
     "color": "green",
     "description": "Some mugwort seeds.",
     "charges": 2,
-    "seed_data": { "plant_name": "mugwort", "fruit": "mugwort", "grow": "91 days" }
+    "seed_data": { "plant_name": "mugwort", "fruit": "mugwort", "grow": "14 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -557,7 +557,7 @@
     "color": "green",
     "description": "Some buckwheat seeds.",
     "charges": 2,
-    "seed_data": { "plant_name": "buckwheat", "fruit": "buckwheat", "byproducts": [ "withered" ], "grow": "91 days" }
+    "seed_data": { "plant_name": "buckwheat", "fruit": "buckwheat", "byproducts": [ "withered" ], "grow": "14 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -567,7 +567,7 @@
     "color": "green",
     "description": "Some seeds harvested from wild herbs.",
     "charges": 2,
-    "seed_data": { "plant_name": "wild herb", "fruit": "wild_herbs", "grow": "91 days" }
+    "seed_data": { "plant_name": "wild herb", "fruit": "wild_herbs", "grow": "14 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -587,7 +587,7 @@
     "color": "green",
     "description": "Some dandelion seeds.",
     "charges": 2,
-    "seed_data": { "plant_name": "dandelion", "fruit": "raw_dandelion", "grow": "91 days" }
+    "seed_data": { "plant_name": "dandelion", "fruit": "raw_dandelion", "grow": "14 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -610,7 +610,7 @@
       "plant_name": "Japanese knotweed",
       "fruit": "japanese_knotweed_stem",
       "byproducts": [ "withered" ],
-      "grow": "91 days"
+      "grow": "14 days"
     }
   },
   {
@@ -620,7 +620,7 @@
     "name": { "str_sp": "Jerusalem artichoke seeds" },
     "description": "Some Jerusalem artichoke seeds.",
     "charges": 2,
-    "seed_data": { "plant_name": "Jerusalem artichoke", "fruit": "jerusalem_artichoke", "byproducts": [ "withered" ], "grow": "91 days" }
+    "seed_data": { "plant_name": "Jerusalem artichoke", "fruit": "jerusalem_artichoke", "byproducts": [ "withered" ], "grow": "14 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -633,7 +633,7 @@
       "plant_name": "starry false Solomon's seal",
       "fruit": "m_stellatum_berries",
       "byproducts": [ "withered" ],
-      "grow": "91 days"
+      "grow": "14 days"
     }
   },
   {
@@ -647,7 +647,7 @@
       "plant_name": "wild sarsaparilla",
       "fruit": "wild_sarsaparilla_root",
       "byproducts": [ "withered" ],
-      "grow": "91 days"
+      "grow": "14 days"
     }
   },
   {
@@ -657,7 +657,7 @@
     "name": { "str_sp": "mayapple seeds" },
     "description": "Some mayapple seeds.",
     "charges": 2,
-    "seed_data": { "plant_name": "mayapple", "fruit": "mayapple", "byproducts": [ "withered" ], "grow": "91 days" }
+    "seed_data": { "plant_name": "mayapple", "fruit": "mayapple", "byproducts": [ "withered" ], "grow": "14 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -670,7 +670,7 @@
       "plant_name": "wintergreen",
       "fruit": "wintergreen_berry",
       "byproducts": [ "wintergreen_leaves", "withered" ],
-      "grow": "91 days"
+      "grow": "14 days"
     }
   },
   {
@@ -680,7 +680,7 @@
     "name": { "str_sp": "groundnut seeds" },
     "description": "Some groundnut seeds.",
     "charges": 2,
-    "seed_data": { "plant_name": "groundnut", "fruit": "groundnut", "byproducts": [ "withered" ], "grow": "91 days" }
+    "seed_data": { "plant_name": "groundnut", "fruit": "groundnut", "byproducts": [ "withered" ], "grow": "14 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -689,7 +689,7 @@
     "name": { "str_sp": "wild garlic seeds" },
     "description": "Some wild garlic seeds.",
     "charges": 2,
-    "seed_data": { "plant_name": "wild garlic", "fruit": "wild_garlic", "byproducts": [ "withered" ], "grow": "91 days" }
+    "seed_data": { "plant_name": "wild garlic", "fruit": "wild_garlic", "byproducts": [ "withered" ], "grow": "10 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -699,7 +699,7 @@
     "color": "green",
     "description": "Some bamboo seeds.",
     "charges": 2,
-    "seed_data": { "plant_name": "bamboo", "fruit": "raw_bamboo", "grow": "91 days" }
+    "seed_data": { "plant_name": "bamboo", "fruit": "raw_bamboo", "grow": "14 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -709,14 +709,14 @@
     "color": "green",
     "description": "Some rhubarb stems.",
     "charges": 2,
-    "seed_data": { "plant_name": "rhubarb", "fruit": "rhubarb", "byproducts": [ "withered" ], "grow": "91 days" }
+    "seed_data": { "plant_name": "rhubarb", "fruit": "rhubarb", "byproducts": [ "withered" ], "grow": "10 days" }
   },
   {
     "type": "COMESTIBLE",
     "id": "seed_mushroom",
     "copy-from": "seed_mushroom_base",
     "name": { "str_sp": "mushroom spores" },
-    "seed_data": { "plant_name": "mushroom", "fruit": "mushroom", "grow": "91 days" }
+    "seed_data": { "plant_name": "mushroom", "fruit": "mushroom", "grow": "5 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -724,7 +724,7 @@
     "copy-from": "seed_mushroom_base",
     "name": { "str_sp": "morel mushroom spores" },
     "description": "Some morel mushroom spores.",
-    "seed_data": { "plant_name": "morel mushroom", "fruit": "mushroom_morel", "grow": "91 days" }
+    "seed_data": { "plant_name": "morel mushroom", "fruit": "mushroom_morel", "grow": "5 days" }
   },
   {
     "id": "datura_seed",
@@ -739,7 +739,7 @@
     "healthy": -2,
     "fun": -1,
     "use_action": [ "DATURA" ],
-    "seed_data": { "plant_name": "datura", "fruit": "datura_seed", "byproducts": [ "withered" ], "grow": "91 days" }
+    "seed_data": { "plant_name": "datura", "fruit": "datura_seed", "byproducts": [ "withered" ], "grow": "14 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -748,7 +748,7 @@
     "price": 50,
     "name": { "str_sp": "celery seeds" },
     "description": "Some celery seeds.",
-    "seed_data": { "plant_name": "celery", "fruit": "celery", "byproducts": [ "withered" ], "grow": "130 days" }
+    "seed_data": { "plant_name": "celery", "fruit": "celery", "byproducts": [ "withered" ], "grow": "10 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -761,7 +761,7 @@
     "primary_material": "dried_vegetable",
     "weight": "5 g",
     "stack_size": 40,
-    "seed_data": { "plant_name": "oats", "fruit": "oats", "byproducts": [ "withered" ], "grow": "45 days" }
+    "seed_data": { "plant_name": "oats", "fruit": "oats", "byproducts": [ "withered" ], "grow": "14 days" }
   },
   {
     "id": "seed_wheat",
@@ -774,7 +774,7 @@
     "stack_size": 40,
     "material": [ "wheat" ],
     "primary_material": "dried_vegetable",
-    "seed_data": { "plant_name": "wheat", "fruit": "wheat", "byproducts": [ "straw_pile" ], "grow": "120 days" }
+    "seed_data": { "plant_name": "wheat", "fruit": "wheat", "byproducts": [ "straw_pile" ], "grow": "10 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -860,7 +860,7 @@
     "looks_like": "seed_raw_dandelion",
     "name": { "str_sp": "chamomile seeds" },
     "description": "Some chamomile seeds.",
-    "seed_data": { "plant_name": "chamomile", "fruit": "chamomile", "byproducts": [ "withered" ], "grow": "91 days" }
+    "seed_data": { "plant_name": "chamomile", "fruit": "chamomile", "byproducts": [ "withered" ], "grow": "14 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -869,7 +869,7 @@
     "looks_like": "seed_raw_dandelion",
     "name": { "str_sp": "spurge seeds" },
     "description": "Some spurge seeds.",
-    "seed_data": { "plant_name": "spurge", "fruit": "spurge", "byproducts": [ "withered" ], "grow": "91 days" }
+    "seed_data": { "plant_name": "spurge", "fruit": "spurge", "byproducts": [ "withered" ], "grow": "14 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -877,7 +877,7 @@
     "copy-from": "seed",
     "name": { "str_sp": "popcorn seeds" },
     "description": "Some popcorn seeds.",
-    "seed_data": { "plant_name": "popcorn", "fruit": "popcorn_raw", "byproducts": [ "withered" ], "grow": "91 days" }
+    "seed_data": { "plant_name": "popcorn", "fruit": "popcorn_raw", "byproducts": [ "withered" ], "grow": "10 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -885,7 +885,7 @@
     "copy-from": "seed",
     "name": { "str_sp": "horseradish seeds" },
     "description": "Some horseradish seeds.",
-    "seed_data": { "plant_name": "horseradish", "fruit": "horseradish_root", "byproducts": [ "horseradish_greens" ], "grow": "91 days" }
+    "seed_data": { "plant_name": "horseradish", "fruit": "horseradish_root", "byproducts": [ "horseradish_greens" ], "grow": "10 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -899,7 +899,7 @@
     "description": "Some mustard seeds.  Could be ground into mustard powder.",
     "price": 100,
     "charges": 2,
-    "seed_data": { "plant_name": "mustard", "fruit": "seed_mustard", "byproducts": [ "withered" ], "grow": "91 days" }
+    "seed_data": { "plant_name": "mustard", "fruit": "seed_mustard", "byproducts": [ "withered" ], "grow": "10 days" }
   },
   {
     "type": "COMESTIBLE",
@@ -908,6 +908,6 @@
     "price": 50,
     "name": { "str_sp": "bell pepper seeds" },
     "description": "Some bell pepper seeds.",
-    "seed_data": { "plant_name": "bell pepper", "fruit": "bell_pepper", "byproducts": [ "withered" ], "grow": "70 days" }
+    "seed_data": { "plant_name": "bell pepper", "fruit": "bell_pepper", "byproducts": [ "withered" ], "grow": "10 days" }
   }
 ]
